@@ -1,6 +1,7 @@
 // Copyright 2018 Your Name <your_email>
 
 #include <gtest/gtest.h>
+#include <header.hpp>
 
 TEST(stack, one) {
   stack<int> arr;
@@ -14,5 +15,3 @@ TEST(stack, one) {
   arr.push(5);
   EXPECT_EQ(5, arr.head());
 }
-
-#include <header.hpp>
