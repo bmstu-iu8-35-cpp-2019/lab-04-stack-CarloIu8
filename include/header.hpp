@@ -6,7 +6,8 @@
 template <typename T>
 class stack {
  public:
-  ~stack() { delete[] ptr;
+  ~stack() {
+    delete[] ptr;
     ptr = nullptr;
     size = 0;
     capacity = 0;
@@ -67,6 +68,12 @@ class stack {
 template <typename T>
 class Stack {
  public:
+  ~Stack() {
+    delete[] ptr;
+    ptr = nullptr;
+    size = 0;
+    capacity = 0;
+  }
   Stack() {
     ptr = nullptr;
     size = 0;
