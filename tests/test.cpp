@@ -2,4 +2,17 @@
 
 #include <gtest/gtest.h>
 
+TEST(stack, one) {
+  stack<int> arr;
+  arr.push(0);
+  EXPECT_EQ(0, arr.head());
+  arr.push(11);
+  EXPECT_EQ(11, arr.head());
+  arr.pop();
+  EXPECT_EQ(0, arr.head());
+  int a = 5;
+  arr.push(5);
+  EXPECT_EQ(5, arr.head());
+}
+
 #include <header.hpp>
