@@ -15,3 +15,16 @@ TEST(stack, one) {
   arr.push(a);
   EXPECT_EQ(5, arr.head());
 }
+
+TEST(stack2, two) { Stack<vector<int>> arr;
+  vector<int> m;
+  arr.push_emplace(4, 5);
+  EXPECT_EQ(arr.head()[0], 5);
+  EXPECT_EQ(arr.head()[3], 5);
+  arr.push_emplace(3, 8);
+  EXPECT_EQ(arr.head()[0], 8);
+  EXPECT_EQ(arr.head()[2], 8);
+  m = arr.pop();
+  EXPECT_EQ(arr.head()[0], 5);
+  EXPECT_EQ(arr.head()[3], 5);
+}
