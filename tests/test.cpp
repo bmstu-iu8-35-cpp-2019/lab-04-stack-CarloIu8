@@ -2,7 +2,7 @@
 
 #include <gtest/gtest.h>
 #include <header.hpp>
-
+#include <vector>
 TEST(stack, one) {
   stack<int> arr;
   arr.push(0);
@@ -16,8 +16,8 @@ TEST(stack, one) {
   EXPECT_EQ(5, arr.head());
 }
 
-TEST(stack2, two) { Stack<vector<int>> arr;
-  vector<int> m;
+TEST(stack2, two) { Stack<std::vector<int>> arr;
+  std::vector<int> m;
   arr.push_emplace(4, 5);
   EXPECT_EQ(arr.head()[0], 5);
   EXPECT_EQ(arr.head()[3], 5);
