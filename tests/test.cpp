@@ -12,6 +12,6 @@ TEST(stack, one) {
   arr.pop();
   EXPECT_EQ(0, arr.head());
   int a = 5;
-  arr.push(5);
+  arr.push(a);
   EXPECT_EQ(5, arr.head());
 }
