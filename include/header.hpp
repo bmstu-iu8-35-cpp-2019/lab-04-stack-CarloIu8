@@ -26,7 +26,7 @@ class stack {
   void push(T&& value) {
     if (size < capacity) {
       if (std::is_move_assignable<T>()) {
-        ptr[size] = std::move(value)
+        ptr[size] = std::move(value);
       } else {
         ptr[size] = value;
       }
@@ -37,7 +37,7 @@ class stack {
         arr[i] = ptr[i];
       }
       if (std::is_move_assignable<T>()) {
-        ptr[size] = std::move(value)
+        ptr[size] = std::move(value);
       } else {
         arr[size] = value;
       }
